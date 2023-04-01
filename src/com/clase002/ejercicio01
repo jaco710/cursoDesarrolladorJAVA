@@ -1,0 +1,27 @@
+A continuación, muestro los pasos para crear un nuevo repositorio en Git y GitHub:
+
+    1.	Instalé Git en mi computadora.
+    2.	Ejecuté el programa Git GUI.
+    3.	Seleccione la opción "+ Create new repository".
+    4.	Seleccioné la ruta donde deseaba crear mi nuevo repositorio y pulsé el botón "Create".
+    5.	Se abrió una nueva ventana con diferentes opciones. Configuré las opciones según mis necesidades.
+    6.	Fui a mi navegador y accedí a mi cuenta de GitHub
+    7.	En la sección "Mis repositorios", seleccioné la opción "New".
+    8.	Elegí un nombre para mi nuevo repositorio y agregué una descripción si lo deseé.
+    9.	Pulsé el botón "Create repository" para crear el repositorio en GitHub.
+    10.	La URL de mi nuevo repositorio en GitHub es: https://github.com/jaco710/clase002.git
+
+Ahora tengo un nuevo repositorio en Git y GitHub que puedo usar para guardar y versionar mis proyectos.
+
+A continuación, te describo los pasos para agregar un archivo a mi repositorio clonado en Git y GitHub utilizando Intellij:
+
+    1.	Abro mi IDE Intellij.
+    2.	Voy a la solapa de "Commit".
+    3.	Selecciono el archivo que deseo clonar.
+    4.	Agrego una descripción que identifique los cambios que he realizado en el archivo
+    5.	Pulsé el botón "Commit" para confirmar los cambios y agregar el archivo a mi repositorio local.
+    6.	Una vez agregado el archivo a mi repositorio local, voy hasta la barra de menú y selecciono la opción de Git.
+    7.	Procedo a hacer un "Push" utilizando la dirección de GitHub para enviar los cambios a mi repositorio remoto en GitHub.
+    8.  Verifiqué que el proceso se completó correctamente, actualizando mi cuenta de GitHub en mi navegador.
+
+¡Listo! Tengo el archivo clonado en mi repositorio de Git y GitHub con los cambios que he realizado en el archivo.
