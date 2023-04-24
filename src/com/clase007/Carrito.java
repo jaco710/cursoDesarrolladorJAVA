@@ -1,4 +1,4 @@
-package com.clase05;
+package com.clase007;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,8 +10,8 @@ public class Carrito {
         items = new ArrayList<>();
     }
 
-    public void agregarItem(Producto producto, int cantidad) {
-        ItemCarrito item = new ItemCarrito(producto, cantidad);
+    public void agregarProducto(Producto producto, int cantidad) {
+        ItemCarrito item = new ItemCarrito(producto.getNombre(), producto.getPrecio(), cantidad);
         items.add(item);
     }
 

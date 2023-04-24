@@ -1,4 +1,4 @@
-package com.clase06;
+package com.clase006;
 
 public class Main {
     public static void main(String[] args) {

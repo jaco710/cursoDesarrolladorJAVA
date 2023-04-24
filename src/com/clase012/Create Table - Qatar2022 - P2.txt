@@ -1,0 +1,16 @@
+CREATE TABLE departamento (
+  DepNro INT(2) NOT NULL AUTO_INCREMENT,
+  DepNom VARCHAR(50) NOT NULL,
+  DepPres INT NOT NULL,
+  PRIMARY KEY (DepNro)
+);
+
+CREATE TABLE empleado (
+  EmpDni int(8) NOT NULL,
+  EmpNom VARCHAR(45) NOT NULL,
+  EmpApe VARCHAR(45) NOT NULL,
+  EmpNac VARCHAR(45) NOT NULL,
+  EmpDep INT NOT NULL,
+  PRIMARY KEY (EmpDni),
+  FOREIGN KEY (EmpDep) REFERENCES departamento(DepNro)
+);

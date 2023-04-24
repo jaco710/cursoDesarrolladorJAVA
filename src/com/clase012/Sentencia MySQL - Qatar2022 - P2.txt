@@ -1,0 +1,47 @@
+1. Insertar un empleado nuevo en la nómina de trabajo.
+
+ insert into empleado (EmpDni, EmpNom, EmpApe, EmpNac, EmpDep)
+ values (26842496, 'Juan', 'Pérez', 'Argentina', 1),
+ 	(23658548, 'María', 'González', 'México', 1),
+       	(23698452, 'José', 'López', 'Chile', 2),
+       	(25648573, 'Ana', 'Martínez', 'España', 2),
+       	(256985419, 'Carlos', 'Rodríguez', 'Colombia', 3),
+       	(24532857, 'Fernanda', 'Gómez', 'Brasil', 3),
+       	(24596587, 'Pedro', 'Hernández', 'Perú', 4),
+       	(23659835, 'Luisa', 'Díaz', 'Ecuador', 4),
+       	(23658457, 'Pablo', 'García', 'Uruguay', 5),
+       	(21546589, 'Sofía', 'Torres', 'Paraguay', 5),
+       	(24586954, 'Lucas', 'Romero', 'Venezuela', 6);
+
+2. Modificar la nacionalidad de algún empleado.
+
+ -- Modificar nacionalidad
+update empleado set EmpNac = 'Uruguay' where EmpDni = 26842496;
+
+ -- Consultar la nacionalidad modificada
+ select EmpNac from empleado where EmpDni = 26842496;
+
+3. Eliminar un departamento.
+
+ -- Para eliminar un departamento, debemos eliminar primero todos 
+ -- los empleados asociado al departameto que deseamos eliminar
+
+ delete from empleado where EmpDep = 6;
+
+ -- ahora si, procedemos a eliminar el departamento y luego listamos los departamentos
+
+ delete from departamento where DepNro = 6;
+ select * from departamento;
+
+4. Conocer los empleados que trabajan en el departamento de “logística”.
+
+ select * from empleado e
+ join departamento d
+ on e.EmpDep = d.DepNro
+ where d.DepNom = 'Logística';
+
+5. Mostrar todos los departamentos ordenados alfabéticamente.
+
+ select * from departamento
+ order by DepNom asc;
+

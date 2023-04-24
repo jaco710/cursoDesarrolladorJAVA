@@ -1,9 +1,10 @@
-package com.clase05;
+package com.clase007;
 
-public class Descuento {
+public class Descuento extends Producto {
     private double porcentaje;
 
-    public Descuento(double porcentaje) {
+    public Descuento(String nombre, double precio, double porcentaje) {
+        super(nombre, precio);
         this.porcentaje = porcentaje;
     }
 
